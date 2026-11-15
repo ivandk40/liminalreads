@@ -167,6 +167,12 @@ export default function CuratedMiscellanySection({
                         <span>{gem.episodes.length} episodes</span>
                       </button>
                     )}
+
+                    {!hasEpisodes && gem.seriesInfo && (
+                      <span className="inline-flex items-center text-[10px] font-sans font-medium text-[#555555] bg-[#f3f3f3] px-1.5 py-0.5 rounded">
+                        {gem.seriesInfo}
+                      </span>
+                    )}
                   </div>
 
                   {/* Right Badges & Actions */}
