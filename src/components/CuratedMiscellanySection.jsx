@@ -213,36 +213,33 @@ export default function CuratedMiscellanySection({
 
                 {/* Nested Toggle List for Episodes */}
                 {hasEpisodes && isOpen && (
-                  <div className="mt-3.5 sm:ml-7 pl-4 border-l-2 border-[#111111] space-y-2 pt-1 animate-in fade-in duration-200">
+                  <div className="mt-3 sm:ml-7 pl-4 border-l-2 border-[#111111] divide-y divide-[#f0f0f0] animate-in fade-in duration-200">
                     {gem.episodes.map((ep, epIdx) => (
                       <div 
                         key={ep.id || epIdx} 
-                        className="group/ep flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 py-1 hover:bg-[#f3f3f3] px-2 -mx-2 rounded transition-colors"
+                        className="group/ep flex items-baseline justify-between gap-4 py-2 hover:bg-[#fafafa] px-2 -mx-2 rounded transition-colors"
                       >
-                        <div className="flex items-baseline gap-2 flex-wrap min-w-0">
-                          <span className="font-mono text-[10px] text-[#999999] select-none w-5 flex-shrink-0">
-                            {String(epIdx + 1).padStart(2, '0')}.
-                          </span>
+                        <div className="min-w-0 flex-1 leading-snug">
                           <a
                             href={ep.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-display text-sm sm:text-base text-[#111111] hover:underline font-normal tracking-tight inline-flex items-center gap-1"
+                            className="font-display text-sm sm:text-[15px] text-[#111111] hover:underline font-normal tracking-tight"
                           >
-                            <span>{ep.title}</span>
-                            <ExternalLink className="w-2.5 h-2.5 text-[#888888] opacity-0 group-hover/ep:opacity-100 transition-opacity" />
+                            {ep.title}
                           </a>
                           {ep.description && (
-                            <span className="font-serif text-xs text-[#555555] leading-snug">
-                              — {ep.description}
+                            <span className="font-serif text-xs sm:text-[13px] text-[#555555]">
+                              {' '}— {ep.description}
                             </span>
                           )}
                         </div>
+
                         <a
                           href={ep.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[10px] font-sans text-[#666666] hover:text-[#111111] uppercase tracking-wider flex items-center gap-1 flex-shrink-0 self-start sm:self-auto"
+                          className="text-[10px] font-sans text-[#888888] group-hover/ep:text-[#111111] uppercase tracking-wider flex items-center gap-1 flex-shrink-0 transition-colors"
                         >
                           <span>Listen</span>
                           <ExternalLink className="w-2.5 h-2.5" />
