@@ -748,11 +748,35 @@
     "paragraphs": []
   },
   {
+    "id": "dnd-ep-53-shadow-brokers",
+    "title": "53: Shadow Brokers",
+    "author": "Jack Rhysider",
+    "description": "Darknet Diaries: The NSA's super-secret, advanced hacking tools are stolen and leaked to the world.",
+    "url": "https://open.spotify.com/episode/0j3O5C7NIq2rtCvaI29Kdn?si=b53dcf6abd9a457b",
+    "category": "Podcasts",
+    "type": "Audio",
+    "isStaffPick": false,
+    "readingTime": "Listen",
+    "paragraphs": []
+  },
+  {
     "id": "e79ba9e3-7aaf-4d80-bd62-a936e8ee1845",
     "title": "54: Notpetya",
     "author": "Jack Rhysider",
     "description": "Darknet Diaries: The devastating cyberweapon that paralyzed Ukrainian infrastructure and global shipping.",
     "url": "https://open.spotify.com/episode/698R7TeLzaP0TXhnRo05nc?si=5d5759aec86e4b3d",
+    "category": "Podcasts",
+    "type": "Audio",
+    "isStaffPick": false,
+    "readingTime": "Listen",
+    "paragraphs": []
+  },
+  {
+    "id": "dnd-ep-64-athens-shadow-games",
+    "title": "64: The Athens Shadow Games",
+    "author": "Jack Rhysider",
+    "description": "Darknet Diaries: Inside the high-stakes wiretapping scandal and Greek telecom hack during the 2004 Athens Olympics.",
+    "url": "https://open.spotify.com/episode/1AyEXtfitVUVQyORSRW1c9?si=06c197ab63184c89",
     "category": "Podcasts",
     "type": "Audio",
     "isStaffPick": false,
