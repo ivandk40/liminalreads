@@ -728,84 +728,56 @@
     "title": "Darknet Diaries: True stories from the dark side of the internet",
     "author": "Jack Rhysider",
     "description": "Award-winning podcast uncovering the dark underside of the cyber world.",
-    "url": null,
+    "url": "https://darknetdiaries.com/",
     "category": "Podcasts",
     "type": "Podcast",
     "isStaffPick": false,
-    "readingTime": "Listen",
-    "paragraphs": []
-  },
-  {
-    "id": "458e95eb-bf12-4184-9b3b-1dbe1b0a7ea9",
-    "title": "24: Operation Bayonet",
-    "author": "Jack Rhysider",
-    "description": "Darknet Diaries: How law enforcement took down AlphaBay and Hansa Market in a coordinated cyber sting.",
-    "url": "https://open.spotify.com/episode/4sMVVjgOfN4DixQkk3pUcu?si=d43d8f33b0594be0",
-    "category": "Podcasts",
-    "type": "Audio",
-    "isStaffPick": false,
-    "readingTime": "Listen",
-    "paragraphs": []
-  },
-  {
-    "id": "dnd-ep-53-shadow-brokers",
-    "title": "53: Shadow Brokers",
-    "author": "Jack Rhysider",
-    "description": "Darknet Diaries: The NSA's super-secret, advanced hacking tools are stolen and leaked to the world.",
-    "url": "https://open.spotify.com/episode/0j3O5C7NIq2rtCvaI29Kdn?si=b53dcf6abd9a457b",
-    "category": "Podcasts",
-    "type": "Audio",
-    "isStaffPick": false,
-    "readingTime": "Listen",
-    "paragraphs": []
-  },
-  {
-    "id": "e79ba9e3-7aaf-4d80-bd62-a936e8ee1845",
-    "title": "54: Notpetya",
-    "author": "Jack Rhysider",
-    "description": "Darknet Diaries: The devastating cyberweapon that paralyzed Ukrainian infrastructure and global shipping.",
-    "url": "https://open.spotify.com/episode/698R7TeLzaP0TXhnRo05nc?si=5d5759aec86e4b3d",
-    "category": "Podcasts",
-    "type": "Audio",
-    "isStaffPick": false,
-    "readingTime": "Listen",
-    "paragraphs": []
-  },
-  {
-    "id": "dnd-ep-64-athens-shadow-games",
-    "title": "64: The Athens Shadow Games",
-    "author": "Jack Rhysider",
-    "description": "Darknet Diaries: Inside the high-stakes wiretapping scandal and Greek telecom hack during the 2004 Athens Olympics.",
-    "url": "https://open.spotify.com/episode/1AyEXtfitVUVQyORSRW1c9?si=06c197ab63184c89",
-    "category": "Podcasts",
-    "type": "Audio",
-    "isStaffPick": false,
-    "readingTime": "Listen",
-    "paragraphs": []
-  },
-  {
-    "id": "8b6d6950-c3be-4c2d-b16b-61a7f1310898",
-    "title": "87: Guild of the Grumpy Old Hackers",
-    "author": "Jack Rhysider",
-    "description": "Darknet Diaries: Inside the elite, unconventional network of seasoned veterans defending systems.",
-    "url": "https://open.spotify.com/episode/2qVqt8QAMWhLwTuJ6WCjlT?si=7566c9a3b6364b6b",
-    "category": "Podcasts",
-    "type": "Audio",
-    "isStaffPick": false,
-    "readingTime": "Listen",
-    "paragraphs": []
-  },
-  {
-    "id": "141d6b52-08b0-42e3-83ba-19dfe7e977cc",
-    "title": "104: Arya",
-    "author": "Jack Rhysider",
-    "description": "Darknet Diaries: High-stakes social engineering and penetration testing.",
-    "url": "https://open.spotify.com/episode/3bapFgoW8rrq2YftGN5aHj?si=6bc24e450655489b",
-    "category": "Podcasts",
-    "type": "Audio",
-    "isStaffPick": false,
-    "readingTime": "Listen",
-    "paragraphs": []
+    "readingTime": "6 episodes",
+    "paragraphs": [],
+    "episodes": [
+      {
+        "id": "458e95eb-bf12-4184-9b3b-1dbe1b0a7ea9",
+        "title": "24: Operation Bayonet",
+        "author": "Jack Rhysider",
+        "description": "How law enforcement took down AlphaBay and Hansa Market in a coordinated cyber sting.",
+        "url": "https://open.spotify.com/episode/4sMVVjgOfN4DixQkk3pUcu?si=d43d8f33b0594be0"
+      },
+      {
+        "id": "dnd-ep-53-shadow-brokers",
+        "title": "53: Shadow Brokers",
+        "author": "Jack Rhysider",
+        "description": "The NSA's super-secret, advanced hacking tools are stolen and leaked to the world.",
+        "url": "https://open.spotify.com/episode/0j3O5C7NIq2rtCvaI29Kdn?si=b53dcf6abd9a457b"
+      },
+      {
+        "id": "e79ba9e3-7aaf-4d80-bd62-a936e8ee1845",
+        "title": "54: Notpetya",
+        "author": "Jack Rhysider",
+        "description": "The devastating cyberweapon that paralyzed Ukrainian infrastructure and global shipping.",
+        "url": "https://open.spotify.com/episode/698R7TeLzaP0TXhnRo05nc?si=5d5759aec86e4b3d"
+      },
+      {
+        "id": "dnd-ep-64-athens-shadow-games",
+        "title": "64: The Athens Shadow Games",
+        "author": "Jack Rhysider",
+        "description": "Inside the high-stakes wiretapping scandal and Greek telecom hack during the 2004 Athens Olympics.",
+        "url": "https://open.spotify.com/episode/1AyEXtfitVUVQyORSRW1c9?si=06c197ab63184c89"
+      },
+      {
+        "id": "8b6d6950-c3be-4c2d-b16b-61a7f1310898",
+        "title": "87: Guild of the Grumpy Old Hackers",
+        "author": "Jack Rhysider",
+        "description": "Inside the elite, unconventional network of seasoned veterans defending systems.",
+        "url": "https://open.spotify.com/episode/2qVqt8QAMWhLwTuJ6WCjlT?si=7566c9a3b6364b6b"
+      },
+      {
+        "id": "141d6b52-08b0-42e3-83ba-19dfe7e977cc",
+        "title": "104: Arya",
+        "author": "Jack Rhysider",
+        "description": "High-stakes social engineering and penetration testing.",
+        "url": "https://open.spotify.com/episode/3bapFgoW8rrq2YftGN5aHj?si=6bc24e450655489b"
+      }
+    ]
   },
   {
     "id": "143d664c-4949-80ff-8fb2-e3a6d165f46a",

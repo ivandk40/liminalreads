@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, BookOpen, Star } from 'lucide-react';
+import { ExternalLink, BookOpen, Star, ChevronDown, ChevronRight } from 'lucide-react';
 
 export default function CuratedMiscellanySection({ 
   gems, 
@@ -7,6 +7,16 @@ export default function CuratedMiscellanySection({
   searchQuery
 }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [openToggles, setOpenToggles] = useState({
+    '8b61b43e-011a-470e-933f-bdc43dd06181': true // open by default for visibility
+  });
+
+  const toggleItem = (id) => {
+    setOpenToggles(prev => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
+  };
 
   const categories = [
     'All',
@@ -36,12 +46,18 @@ export default function CuratedMiscellanySection({
     let matchesSearch = true;
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
+      const matchesEpisodes = gem.episodes && gem.episodes.some(ep => 
+        ep.title.toLowerCase().includes(q) ||
+        (ep.description && ep.description.toLowerCase().includes(q))
+      );
+
       matchesSearch = 
         gem.title.toLowerCase().includes(q) ||
         (gem.author && gem.author.toLowerCase().includes(q)) ||
         (gem.description && gem.description.toLowerCase().includes(q)) ||
         (gem.category && gem.category.toLowerCase().includes(q)) ||
-        (gem.type && gem.type.toLowerCase().includes(q));
+        (gem.type && gem.type.toLowerCase().includes(q)) ||
+        matchesEpisodes;
     }
 
     return matchesCat && matchesSearch;
@@ -85,6 +101,16 @@ export default function CuratedMiscellanySection({
         <div className="divide-y divide-[#eeeeee]">
           {filteredGems.map((gem, idx) => {
             const hasStory = gem.paragraphs && gem.paragraphs.length > 0;
+            const hasEpisodes = Boolean(gem.episodes && gem.episodes.length > 0);
+            
+            // Auto-expand toggle if searching matches child episode
+            const queryMatchesChild = Boolean(
+              searchQuery && hasEpisodes && gem.episodes.some(ep => 
+                ep.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                (ep.description && ep.description.toLowerCase().includes(searchQuery.toLowerCase()))
+              )
+            );
+            const isOpen = Boolean(openToggles[gem.id] || queryMatchesChild);
 
             return (
               <article
@@ -99,7 +125,14 @@ export default function CuratedMiscellanySection({
                     </span>
 
                     <h3 className="font-display text-base sm:text-lg text-[#111111] font-normal tracking-tight group-hover:underline underline-offset-2">
-                      {gem.url ? (
+                      {hasEpisodes ? (
+                        <button
+                          onClick={() => toggleItem(gem.id)}
+                          className="text-left font-display text-base sm:text-lg text-[#111111] font-normal tracking-tight hover:opacity-80 inline-flex items-center gap-1.5"
+                        >
+                          <span>{gem.title}</span>
+                        </button>
+                      ) : gem.url ? (
                         <a 
                           href={gem.url} 
                           target="_blank" 
@@ -122,6 +155,17 @@ export default function CuratedMiscellanySection({
                       <span className="font-sans text-[11px] uppercase tracking-wider text-[#777777]">
                         — {gem.author}
                       </span>
+                    )}
+
+                    {hasEpisodes && (
+                      <button
+                        onClick={() => toggleItem(gem.id)}
+                        className="inline-flex items-center gap-1 text-[10px] font-sans font-medium text-[#444444] bg-[#f0f0f0] hover:bg-[#e4e4e4] px-1.5 py-0.5 rounded transition-colors"
+                        title={isOpen ? "Collapse list" : "Expand list"}
+                      >
+                        {isOpen ? <ChevronDown className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />}
+                        <span>{gem.episodes.length} episodes</span>
+                      </button>
                     )}
                   </div>
 
@@ -160,11 +204,52 @@ export default function CuratedMiscellanySection({
                   </div>
                 </div>
 
-                {/* Row 2: Description (Compact) */}
+                {/* Row 2: Description */}
                 {gem.description && (
                   <p className="font-serif text-xs sm:text-[13px] text-[#555555] leading-snug line-clamp-2 mt-1 sm:pl-7">
                     {gem.description}
                   </p>
+                )}
+
+                {/* Nested Toggle List for Episodes */}
+                {hasEpisodes && isOpen && (
+                  <div className="mt-3.5 sm:ml-7 pl-4 border-l-2 border-[#111111] space-y-2 pt-1 animate-in fade-in duration-200">
+                    {gem.episodes.map((ep, epIdx) => (
+                      <div 
+                        key={ep.id || epIdx} 
+                        className="group/ep flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 py-1 hover:bg-[#f3f3f3] px-2 -mx-2 rounded transition-colors"
+                      >
+                        <div className="flex items-baseline gap-2 flex-wrap min-w-0">
+                          <span className="font-mono text-[10px] text-[#999999] select-none w-5 flex-shrink-0">
+                            {String(epIdx + 1).padStart(2, '0')}.
+                          </span>
+                          <a
+                            href={ep.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-display text-sm sm:text-base text-[#111111] hover:underline font-normal tracking-tight inline-flex items-center gap-1"
+                          >
+                            <span>{ep.title}</span>
+                            <ExternalLink className="w-2.5 h-2.5 text-[#888888] opacity-0 group-hover/ep:opacity-100 transition-opacity" />
+                          </a>
+                          {ep.description && (
+                            <span className="font-serif text-xs text-[#555555] leading-snug">
+                              — {ep.description}
+                            </span>
+                          )}
+                        </div>
+                        <a
+                          href={ep.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[10px] font-sans text-[#666666] hover:text-[#111111] uppercase tracking-wider flex items-center gap-1 flex-shrink-0 self-start sm:self-auto"
+                        >
+                          <span>Listen</span>
+                          <ExternalLink className="w-2.5 h-2.5" />
+                        </a>
+                      </div>
+                    ))}
+                  </div>
                 )}
               </article>
             );
