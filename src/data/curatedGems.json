@@ -732,15 +732,43 @@
     "category": "Podcasts",
     "type": "Podcast",
     "isStaffPick": false,
-    "readingTime": "6 episodes",
+    "readingTime": "14 episodes",
     "paragraphs": [],
     "episodes": [
+      {
+        "id": "dnd-ep-21-black-duck-eggs",
+        "title": "21: Black Duck Eggs",
+        "author": "Jack Rhysider",
+        "description": "Ira Winkler and an elite team infiltrate a Global 5 corporate giant where intellectual property theft could cause billions in damage.",
+        "url": "https://open.spotify.com/episode/6iK5wfD95Bx0iHuaB6DVoY?si=b3362aebaac346df"
+      },
       {
         "id": "458e95eb-bf12-4184-9b3b-1dbe1b0a7ea9",
         "title": "24: Operation Bayonet",
         "author": "Jack Rhysider",
         "description": "How law enforcement took down AlphaBay and Hansa Market in a coordinated cyber sting.",
         "url": "https://open.spotify.com/episode/4sMVVjgOfN4DixQkk3pUcu?si=d43d8f33b0594be0"
+      },
+      {
+        "id": "dnd-ep-29-stuxnet",
+        "title": "29: Stuxnet",
+        "author": "Jack Rhysider",
+        "description": "How the world's most sophisticated cyberweapon infiltrated and physically destroyed uranium centrifuges at Iran's Natanz nuclear facility.",
+        "url": "https://open.spotify.com/episode/0qlbXt6FWftwS94UUfluOT?si=9a4433c266cf42af"
+      },
+      {
+        "id": "dnd-ep-45-xbox-underground-1",
+        "title": "45: XBox Underground (Part 1)",
+        "author": "Jack Rhysider",
+        "description": "Inside the underground teenage hacker ring that breached Microsoft, Valve, and the US military.",
+        "url": "https://open.spotify.com/episode/0SF6oXn0z9UiT299AWAJJU?si=ca8343ed5775485b"
+      },
+      {
+        "id": "dnd-ep-46-xbox-underground-2",
+        "title": "46: XBox Underground (Part 2)",
+        "author": "Jack Rhysider",
+        "description": "The conclusion of the Xbox Underground ring as the FBI raids close in on the hackers.",
+        "url": "https://open.spotify.com/episode/5FO4bqRKnNt5QNkz9lVwAA?si=9c0d836bacb545b1"
       },
       {
         "id": "dnd-ep-53-shadow-brokers",
@@ -764,11 +792,39 @@
         "url": "https://open.spotify.com/episode/1AyEXtfitVUVQyORSRW1c9?si=06c197ab63184c89"
       },
       {
+        "id": "dnd-ep-86-linkedin-incident",
+        "title": "86: The LinkedIn Incident",
+        "author": "Jack Rhysider",
+        "description": "How a Russian hacker breached LinkedIn in 2012, stole millions of password hashes, and triggered an international manhunt.",
+        "url": "https://open.spotify.com/episode/6jizA7FPO1PUoKW57H2UUu?si=71fcb8dbf73c4135"
+      },
+      {
         "id": "8b6d6950-c3be-4c2d-b16b-61a7f1310898",
         "title": "87: Guild of the Grumpy Old Hackers",
         "author": "Jack Rhysider",
         "description": "Inside the elite, unconventional network of seasoned veterans defending systems.",
         "url": "https://open.spotify.com/episode/2qVqt8QAMWhLwTuJ6WCjlT?si=7566c9a3b6364b6b"
+      },
+      {
+        "id": "dnd-ep-98-zero-day-brokers",
+        "title": "98: Zero Day Brokers",
+        "author": "Jack Rhysider",
+        "description": "NYT reporter Nicole Perlroth uncovers the secretive, shadowy multi-million-dollar government gray market for zero-day cyber exploits.",
+        "url": "https://open.spotify.com/episode/4vXyFtBk1IarDRAoXIWQFf?si=6c2fbb0040e74563"
+      },
+      {
+        "id": "dnd-ep-101-loteria",
+        "title": "101: Lotería",
+        "author": "Jack Rhysider",
+        "description": "In 2014, the Puerto Rico Lottery was mysteriously bleeding money from within. Inside the untold story of the fraud.",
+        "url": "https://open.spotify.com/episode/0Lu23UyQc3zxGP2u9AtgB8?si=407fe82b4b544209"
+      },
+      {
+        "id": "dnd-ep-102-money-maker",
+        "title": "102: Money Maker",
+        "author": "Jack Rhysider",
+        "description": "The incredible story of Frank Bourassa, a master counterfeiter who printed $250 million in virtually flawless US twenties.",
+        "url": "https://open.spotify.com/episode/5whDjbxTUK1vEIxpDKNPPL?si=cfb55f91afde498d"
       },
       {
         "id": "141d6b52-08b0-42e3-83ba-19dfe7e977cc",
