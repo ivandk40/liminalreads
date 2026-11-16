@@ -23,18 +23,13 @@ export default function CuratedMiscellanySection({
   const categories = [
     'All',
     'Personal Favorites',
-    'Essays',
+    'Essays & Ideas',
+    'Investigative & True Crime',
     'The New Yorker',
-    'Articles',
-    'Aviation Disasters',
-    'Sad, Creepy & Disturbing',
-    'Museum of Reddit',
-    'Sci-Fi, Philosophy & Mathematics',
-    'Podcasts',
-    'Webcomics',
-    'Bizarre and Mystifying',
-    'Music',
-    'Miscellaneous'
+    'Aviation & Maritime Disasters',
+    'Sci-Fi, Dark & Bizarre',
+    'Reddit Lore',
+    'Podcasts & Audio'
   ];
 
   const filteredGems = gems.filter((gem) => {
