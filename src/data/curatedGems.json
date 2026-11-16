@@ -936,6 +936,72 @@
     "paragraphs": []
   },
   {
+    "id": "99-percent-invisible",
+    "title": "99% Invisible",
+    "author": "Roman Mars",
+    "description": "A tiny-radio show about design, architecture, and the invisible structures that shape our world.",
+    "url": "https://99percentinvisible.org/",
+    "category": "Podcasts",
+    "type": "Podcast",
+    "isStaffPick": false,
+    "readingTime": "4 episodes",
+    "paragraphs": [],
+    "episodes": [
+      {
+        "id": "99pi-83-heyoon",
+        "title": "83: Heyoon",
+        "author": "Alex Goldman",
+        "description": "Alex Goldman searches for a mysterious, deeply hidden pavilion in the Michigan woods built by an unknown artist, known only as Heyoon.",
+        "url": "https://open.spotify.com/episode/1ogI4jaIPzMaqrgrH284b0?si=067beade98b8460b"
+      },
+      {
+        "id": "99pi-114-ten-thousand-years",
+        "title": "114: Ten Thousand Years",
+        "author": "Roman Mars",
+        "description": "How do you design a nuclear waste warning marker to keep humans away for 10,000 years, long after modern languages have vanished?",
+        "url": "https://open.spotify.com/episode/7mVTuravUk3IJb1eMri3az?si=6816d99a0b4e4e40"
+      },
+      {
+        "id": "99pi-386-their-dark-materials",
+        "title": "386: Their Dark Materials",
+        "author": "Roman Mars",
+        "description": "Vantablack—a nanotechnology coating so dark it looks like a tear in the universe—sparks a bitter, high-stakes feud in the contemporary art world.",
+        "url": "https://open.spotify.com/episode/7I3IHIGays3hOTktOgR9Zg?si=449d1dce38ef41ce"
+      },
+      {
+        "id": "99pi-389-let-the-dogs-out",
+        "title": "389: Whomst Among Us Has Let The Dogs Out",
+        "author": "Roman Mars",
+        "description": "The mystery of who actually wrote 'Who Let The Dogs Out' sends one man down an obsessive, continent-spanning rabbit hole about the nature of creative ownership.",
+        "url": "https://open.spotify.com/episode/5nxDaKOulSjodoptvWB7rv?si=363f01e0fc884b6f"
+      }
+    ]
+  },
+  {
+    "id": "reply-all-case-of-missing-hit",
+    "title": "Reply All: The Case of the Missing Hit",
+    "author": "PJ Vogt & Alex Goldman",
+    "description": "A man is haunted by the memory of a pop song from his youth that has vanished completely from the internet. PJ takes on the case in what became an instant podcast classic.",
+    "url": "https://open.spotify.com/show/48D3PynNn5Apvs2i1ldfpW?si=db4fcef3e99348f9",
+    "category": "Podcasts",
+    "type": "Podcast",
+    "isStaffPick": true,
+    "readingTime": "Episode",
+    "paragraphs": []
+  },
+  {
+    "id": "swindled-the-treasurer-budd-dwyer",
+    "title": "Swindled: The Treasurer (Budd Dwyer)",
+    "author": "A Concerned Citizen",
+    "description": "An honest, hardworking politician reaches his breaking point after becoming entangled in a high-stakes Pennsylvania bribery scandal.",
+    "url": "https://open.spotify.com/episode/2zCRvs6WwX5Kb2roS1curD?si=1e9ab38182294a2b",
+    "category": "Podcasts",
+    "type": "Podcast",
+    "isStaffPick": false,
+    "readingTime": "Episode",
+    "paragraphs": []
+  },
+  {
     "id": "a24c4ca3-4aa6-463b-8f5f-48d42dea3d09",
     "title": "Reimagining technology - and talking to animals with Aza Raskin",
     "author": "",
@@ -953,18 +1019,6 @@
     "author": "",
     "description": "Joe Rogan",
     "url": "https://open.spotify.com/episode/4ZcBHvjhGMTTdGF3fIdvg9?si=d432b26366124500",
-    "category": "Misc",
-    "type": "Audio",
-    "isStaffPick": false,
-    "readingTime": "Listen",
-    "paragraphs": []
-  },
-  {
-    "id": "4d281f54-8375-47b9-9527-5cb6ed070029",
-    "title": "Ten Thousand Years",
-    "author": "",
-    "description": "99% invisible",
-    "url": "https://open.spotify.com/episode/7mVTuravUk3IJb1eMri3az?si=6816d99a0b4e4e40",
     "category": "Misc",
     "type": "Audio",
     "isStaffPick": false,
