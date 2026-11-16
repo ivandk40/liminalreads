@@ -210,7 +210,7 @@ export default function CuratedMiscellanySection({
 
                 {/* Row 2: Description */}
                 {gem.description && (
-                  <p className="font-serif text-sm sm:text-[13px] text-[#555555] leading-relaxed sm:leading-snug line-clamp-3 sm:line-clamp-2 mt-1 sm:pl-7">
+                  <p className="font-serif text-sm sm:text-[13px] text-[#555555] leading-relaxed sm:leading-snug mt-1 sm:pl-7">
                     {gem.description}
                   </p>
                 )}
