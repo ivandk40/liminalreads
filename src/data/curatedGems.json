@@ -175,7 +175,7 @@
     "url": "https://otherhand.org/home-page/search-and-rescue/the-hunt-for-the-death-valley-germans/",
     "category": "Articles",
     "type": "Article",
-    "isStaffPick": false,
+    "isStaffPick": true,
     "readingTime": "Quick read",
     "paragraphs": []
   },
@@ -187,7 +187,7 @@
     "url": "https://archive.vanityfair.com/article/2013/5/the-body-in-room-348",
     "category": "Articles",
     "type": "Article",
-    "isStaffPick": false,
+    "isStaffPick": true,
     "readingTime": "Quick read",
     "paragraphs": []
   },
