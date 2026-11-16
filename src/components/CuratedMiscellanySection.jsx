@@ -114,12 +114,12 @@ export default function CuratedMiscellanySection({
               >
                 {/* Row 1: Title, Author, and Metadata */}
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                  <div className="flex items-baseline gap-2 flex-wrap min-w-0">
-                    <span className="font-sans text-[11px] sm:text-[10px] text-[#999999] font-mono select-none w-5 flex-shrink-0">
+                  <div className="min-w-0 flex-1 leading-normal">
+                    <span className="font-sans text-[11px] sm:text-[10px] text-[#999999] font-mono select-none mr-2 inline-block">
                       {String(idx + 1).padStart(2, '0')}.
                     </span>
 
-                    <h3 className="font-display text-[17px] sm:text-lg text-[#111111] font-normal tracking-tight group-hover:underline underline-offset-2">
+                    <h3 className="inline font-display text-[17px] sm:text-lg text-[#111111] font-normal tracking-tight group-hover:underline underline-offset-2">
                       {hasEpisodes ? (
                         <button
                           onClick={() => toggleItem(gem.id)}
@@ -127,9 +127,9 @@ export default function CuratedMiscellanySection({
                         >
                           <span>{gem.title}</span>
                           {isOpen ? (
-                            <ChevronDown className="w-4 h-4 text-[#111111] transition-transform" />
+                            <ChevronDown className="w-4 h-4 text-[#111111] transition-transform inline" />
                           ) : (
-                            <ChevronRight className="w-4 h-4 text-[#777777] transition-transform" />
+                            <ChevronRight className="w-4 h-4 text-[#777777] transition-transform inline" />
                           )}
                         </button>
                       ) : gem.url ? (
@@ -152,7 +152,7 @@ export default function CuratedMiscellanySection({
                     </h3>
 
                     {gem.author && (
-                      <span className="font-sans text-xs sm:text-[11px] uppercase tracking-wider text-[#777777]">
+                      <span className="font-sans text-xs sm:text-[11px] uppercase tracking-wider text-[#777777] ml-2 inline-block whitespace-nowrap">
                         — {gem.author}
                       </span>
                     )}
@@ -160,7 +160,7 @@ export default function CuratedMiscellanySection({
                     {hasEpisodes && (
                       <button
                         onClick={() => toggleItem(gem.id)}
-                        className="inline-flex items-center gap-1.5 text-xs sm:text-[11px] font-sans font-medium text-[#222222] bg-[#f0f0f0] hover:bg-[#e4e4e4] border border-[#e0e0e0] px-2 py-0.5 rounded transition-all shadow-xs"
+                        className="inline-flex items-center gap-1.5 text-xs sm:text-[11px] font-sans font-medium text-[#222222] bg-[#f0f0f0] hover:bg-[#e4e4e4] border border-[#e0e0e0] px-2 py-0.5 rounded transition-all shadow-xs ml-2 align-middle"
                         title={isOpen ? "Collapse list" : "Expand list"}
                       >
                         {isOpen ? <ChevronDown className="w-3.5 h-3.5 text-[#111111]" /> : <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />}
@@ -169,7 +169,7 @@ export default function CuratedMiscellanySection({
                     )}
 
                     {!hasEpisodes && gem.seriesInfo && (
-                      <span className="inline-flex items-center text-[11px] sm:text-[10px] font-sans font-medium text-[#555555] bg-[#f3f3f3] px-1.5 py-0.5 rounded">
+                      <span className="inline-flex items-center text-[11px] sm:text-[10px] font-sans font-medium text-[#555555] bg-[#f3f3f3] px-1.5 py-0.5 rounded ml-2 align-middle">
                         {gem.seriesInfo}
                       </span>
                     )}
