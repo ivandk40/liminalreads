@@ -91,7 +91,7 @@
     "url": "https://waitbutwhy.com/2017/04/neuralink.html",
     "category": "Articles",
     "type": "Article",
-    "isStaffPick": true,
+    "isStaffPick": false,
     "readingTime": "Quick read",
     "paragraphs": []
   },
@@ -199,7 +199,7 @@
     "url": "https://www.washingtonpost.com/lifestyle/magazine/fatal-distraction-forgetting-a-child-in-thebackseat-of-a-car-is-a-horrifying-mistake-is-it-a-crime/2014/06/16/8ae0fe3a-f580-11e3-a3a5-42be35962a52_story.html",
     "category": "Articles",
     "type": "Article",
-    "isStaffPick": true,
+    "isStaffPick": false,
     "readingTime": "Longform",
     "paragraphs": []
   },
@@ -979,7 +979,7 @@
     "category": "Podcasts",
     "type": "Podcast Series",
     "seriesInfo": "Podcast Series",
-    "isStaffPick": false,
+    "isStaffPick": true,
     "readingTime": "Series",
     "paragraphs": []
   },
@@ -1033,7 +1033,7 @@
     "url": "https://open.spotify.com/show/48D3PynNn5Apvs2i1ldfpW?si=db4fcef3e99348f9",
     "category": "Podcasts",
     "type": "Podcast",
-    "isStaffPick": true,
+    "isStaffPick": false,
     "readingTime": "Episode",
     "paragraphs": []
   },
