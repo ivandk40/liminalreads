@@ -399,12 +399,12 @@
     "id": "367d664c-4949-80a8-a1a8-d37ea85cff88",
     "title": "The Human Factor",
     "author": "William Langewiesche",
-    "description": "Airline pilots were once the heroes of the skies. Now they're at war with their planes.",
+    "description": "Airline pilots were once the heroes of the skies. Today, in the quest for safety, airplanes are meant to largely fly themselves. Which is why the 2009 crash of Air France Flight 447, which killed 228 people, remains so perplexing and significant. William Langewiesche explores how a series of small errors turned a state-of-the-art cockpit into a death trap.",
     "url": "https://www.vanityfair.com/news/business/2014/10/air-france-flight-447-crash",
     "category": "Aviation Disasters",
     "type": "Article",
-    "isStaffPick": false,
-    "readingTime": "Quick read",
+    "isStaffPick": true,
+    "readingTime": "Longform",
     "paragraphs": []
   },
   {
