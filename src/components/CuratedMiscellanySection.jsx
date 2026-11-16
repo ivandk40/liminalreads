@@ -65,7 +65,7 @@ export default function CuratedMiscellanySection({
       
       {/* Category Navigation (Cleanly Wrapped, No Horizontal Scrollbar) */}
       <div className="flex flex-wrap items-center justify-between gap-y-3 border-b border-[#e5e5e5] pb-2.5">
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-sans uppercase tracking-wider">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs sm:text-[11px] font-sans uppercase tracking-wider">
           {categories.map((cat) => {
             const isFavorite = cat === 'Personal Favorites';
             return (
@@ -84,7 +84,7 @@ export default function CuratedMiscellanySection({
             );
           })}
         </div>
-        <span className="font-sans text-[11px] text-[#888888] whitespace-nowrap self-end sm:self-center">
+        <span className="font-sans text-xs sm:text-[11px] text-[#888888] whitespace-nowrap self-end sm:self-center">
           {filteredGems.length} items
         </span>
       </div>
@@ -117,15 +117,15 @@ export default function CuratedMiscellanySection({
                 {/* Row 1: Title, Author, and Metadata */}
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
                   <div className="flex items-baseline gap-2 flex-wrap min-w-0">
-                    <span className="font-sans text-[10px] text-[#999999] font-mono select-none w-5 flex-shrink-0">
+                    <span className="font-sans text-[11px] sm:text-[10px] text-[#999999] font-mono select-none w-5 flex-shrink-0">
                       {String(idx + 1).padStart(2, '0')}.
                     </span>
 
-                    <h3 className="font-display text-base sm:text-lg text-[#111111] font-normal tracking-tight group-hover:underline underline-offset-2">
+                    <h3 className="font-display text-[17px] sm:text-lg text-[#111111] font-normal tracking-tight group-hover:underline underline-offset-2">
                       {hasEpisodes ? (
                         <button
                           onClick={() => toggleItem(gem.id)}
-                          className="text-left font-display text-base sm:text-lg text-[#111111] font-normal tracking-tight hover:opacity-80 inline-flex items-center gap-1.5"
+                          className="text-left font-display text-[17px] sm:text-lg text-[#111111] font-normal tracking-tight hover:opacity-80 inline-flex items-center gap-1.5"
                         >
                           <span>{gem.title}</span>
                         </button>
@@ -149,7 +149,7 @@ export default function CuratedMiscellanySection({
                     </h3>
 
                     {gem.author && (
-                      <span className="font-sans text-[11px] uppercase tracking-wider text-[#777777]">
+                      <span className="font-sans text-xs sm:text-[11px] uppercase tracking-wider text-[#777777]">
                         — {gem.author}
                       </span>
                     )}
@@ -157,7 +157,7 @@ export default function CuratedMiscellanySection({
                     {hasEpisodes && (
                       <button
                         onClick={() => toggleItem(gem.id)}
-                        className="inline-flex items-center gap-1 text-[10px] font-sans font-medium text-[#444444] bg-[#f0f0f0] hover:bg-[#e4e4e4] px-1.5 py-0.5 rounded transition-colors"
+                        className="inline-flex items-center gap-1 text-[11px] sm:text-[10px] font-sans font-medium text-[#444444] bg-[#f0f0f0] hover:bg-[#e4e4e4] px-1.5 py-0.5 rounded transition-colors"
                         title={isOpen ? "Collapse list" : "Expand list"}
                       >
                         {isOpen ? <ChevronDown className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />}
@@ -166,14 +166,14 @@ export default function CuratedMiscellanySection({
                     )}
 
                     {!hasEpisodes && gem.seriesInfo && (
-                      <span className="inline-flex items-center text-[10px] font-sans font-medium text-[#555555] bg-[#f3f3f3] px-1.5 py-0.5 rounded">
+                      <span className="inline-flex items-center text-[11px] sm:text-[10px] font-sans font-medium text-[#555555] bg-[#f3f3f3] px-1.5 py-0.5 rounded">
                         {gem.seriesInfo}
                       </span>
                     )}
                   </div>
 
                   {/* Right Badges & Actions */}
-                  <div className="flex items-center gap-2 flex-shrink-0 self-start sm:self-auto text-[10px] font-sans">
+                  <div className="flex items-center gap-2 flex-shrink-0 self-start sm:self-auto text-[11px] sm:text-[10px] font-sans">
                     {gem.isStaffPick && (
                       <span className="text-[#111111] font-semibold flex items-center gap-0.5">
                         <Star className="w-2.5 h-2.5 fill-[#111111]" /> Favorite
@@ -209,7 +209,7 @@ export default function CuratedMiscellanySection({
 
                 {/* Row 2: Description */}
                 {gem.description && (
-                  <p className="font-serif text-xs sm:text-[13px] text-[#555555] leading-snug line-clamp-2 mt-1 sm:pl-7">
+                  <p className="font-serif text-sm sm:text-[13px] text-[#555555] leading-relaxed sm:leading-snug line-clamp-3 sm:line-clamp-2 mt-1 sm:pl-7">
                     {gem.description}
                   </p>
                 )}
@@ -227,12 +227,12 @@ export default function CuratedMiscellanySection({
                             href={ep.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-display text-sm sm:text-[15px] text-[#111111] hover:underline font-normal tracking-tight"
+                            className="font-display text-[15px] sm:text-[15px] text-[#111111] hover:underline font-normal tracking-tight"
                           >
                             {ep.title}
                           </a>
                           {ep.description && (
-                            <span className="font-serif text-xs sm:text-[13px] text-[#555555]">
+                            <span className="font-serif text-sm sm:text-[13px] text-[#555555]">
                               {' '}— {ep.description}
                             </span>
                           )}
@@ -242,7 +242,7 @@ export default function CuratedMiscellanySection({
                           href={ep.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[10px] font-sans text-[#888888] group-hover/ep:text-[#111111] uppercase tracking-wider flex items-center gap-1 flex-shrink-0 transition-colors"
+                          className="text-[11px] sm:text-[10px] font-sans text-[#888888] group-hover/ep:text-[#111111] uppercase tracking-wider flex items-center gap-1 flex-shrink-0 transition-colors"
                         >
                           <span>Listen</span>
                           <ExternalLink className="w-2.5 h-2.5" />

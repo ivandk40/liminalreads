@@ -14,10 +14,10 @@ export default function Header({
         <h1 className="font-display text-3xl sm:text-4xl font-normal text-[#111111] tracking-tight">
           Liminal Reads
         </h1>
-        <p className="mt-1 font-serif text-xs sm:text-[13px] text-[#333333] tracking-wide">
+        <p className="mt-1 font-serif text-[13px] sm:text-[13px] text-[#333333] tracking-wide">
           Curated curiosities from the far reaches of the internet
         </p>
-        <p className="mt-1.5 font-serif italic text-[11px] sm:text-xs text-[#777777] max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-1.5 font-serif italic text-xs sm:text-xs text-[#777777] max-w-2xl mx-auto leading-relaxed">
           Investigative journalism, aviation post-mortems, darknet dispatches, transfinite mathematics, bizarre true crime, eerie manga, and Reddit folklore.
         </p>
       </div>
@@ -34,7 +34,7 @@ export default function Header({
               placeholder={`Search ${count} items...`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-8 pr-3 py-1 rounded bg-white border border-[#e5e5e5] text-xs font-sans text-[#111111] placeholder-[#888888] focus:outline-none focus:border-[#111111] transition-colors"
+              className="w-full pl-8 pr-3 py-1 rounded bg-white border border-[#e5e5e5] text-sm sm:text-xs font-sans text-[#111111] placeholder-[#888888] focus:outline-none focus:border-[#111111] transition-colors"
             />
             {searchQuery && (
               <button

@@ -59,13 +59,13 @@ export default function StoryReaderModal({ story, onClose }) {
         </div>
 
         {/* Reader Body */}
-        <div className="flex-1 overflow-y-auto px-6 sm:px-14 py-10 space-y-6">
-          <div className="border-b border-[#111111] pb-6 space-y-2">
-            <h1 className="font-display text-3xl sm:text-4xl text-[#111111] leading-tight font-normal">
+        <div className="flex-1 overflow-y-auto px-5 sm:px-14 py-8 sm:py-10 space-y-6">
+          <div className="border-b border-[#111111] pb-5 sm:pb-6 space-y-2">
+            <h1 className="font-display text-2xl sm:text-4xl text-[#111111] leading-tight font-normal">
               {story.title}
             </h1>
             {story.author && (
-              <p className="font-sans text-xs uppercase tracking-widest text-[#666666]">
+              <p className="font-sans text-xs sm:text-xs uppercase tracking-widest text-[#666666]">
                 By <span className="text-[#111111] font-semibold">{story.author}</span>
               </p>
             )}
@@ -82,7 +82,7 @@ export default function StoryReaderModal({ story, onClose }) {
             )}
           </div>
 
-          <div className="font-serif text-lg leading-relaxed text-[#222222] space-y-5">
+          <div className="font-serif text-[19px] sm:text-lg leading-relaxed text-[#222222] space-y-5">
             {story.paragraphs && story.paragraphs.length > 0 ? (
               story.paragraphs.map((p, idx) => (
                 <p key={idx} className="whitespace-pre-line">
