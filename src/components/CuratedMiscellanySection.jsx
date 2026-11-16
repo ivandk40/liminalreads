@@ -19,11 +19,13 @@ export default function CuratedMiscellanySection({
   const categories = [
     'All',
     'Personal Favorites',
-    'Essays & Ideas',
-    'Investigative & True Crime',
-    'The New Yorker',
+    'Mental Models & Philosophy',
+    'Eccentric Minds & Culture',
+    'True Crime & Investigations',
+    'Expeditions & Remote Places',
     'Aviation & Maritime Disasters',
-    'Sci-Fi, Dark & Bizarre',
+    'Science, Medicine & Tech',
+    'Sci-Fi & The Uncanny',
     'Reddit Lore',
     'Podcasts & Audio'
   ];
