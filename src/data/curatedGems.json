@@ -836,6 +836,41 @@
     ]
   },
   {
+    "id": "casefile-true-crime",
+    "title": "Casefile True Crime",
+    "author": "Anonymous Host",
+    "description": "Fact-based, deeply researched deep dives into the world's most compelling and baffling true crime cases.",
+    "url": "https://casefilepodcast.com/",
+    "category": "Podcasts",
+    "type": "Podcast",
+    "isStaffPick": false,
+    "readingTime": "3 episodes",
+    "paragraphs": [],
+    "episodes": [
+      {
+        "id": "casefile-106-part-1",
+        "title": "Case 106: Peter Nielsen (Part 1)",
+        "author": "Anonymous Host",
+        "description": "The harrowing 2002 Überlingen mid-air collision over Germany and the lone Swiss air traffic controller on duty.",
+        "url": "https://open.spotify.com/episode/7kpNEs7MXxlb7JkXT2udsy?si=d2da2ac8685b4dff"
+      },
+      {
+        "id": "casefile-106-part-2",
+        "title": "Case 106: Peter Nielsen (Part 2)",
+        "author": "Anonymous Host",
+        "description": "After losing his family in the Überlingen collision, architect Vitaly Kaloyev tracks down air traffic controller Peter Nielsen.",
+        "url": "https://open.spotify.com/episode/0ZFG0IXJ737kEW1P9wTWdL?si=0fd8a647cae14994"
+      },
+      {
+        "id": "casefile-185-kim-chol",
+        "title": "Case 185: Kim Chol",
+        "author": "Anonymous Host",
+        "description": "Two women recruited for a 'YouTube prank show' are tricked into assassinating North Korean heir Kim Jong-nam with VX nerve agent.",
+        "url": "https://open.spotify.com/episode/2QajDWrnLrOgxVlDnelfhD?si=aec1f6dbc4ab4a7b"
+      }
+    ]
+  },
+  {
     "id": "143d664c-4949-80ff-8fb2-e3a6d165f46a",
     "title": "Noble: The Tri-State Crematorium",
     "author": "Shaun Raviv & Tenderfoot TV",

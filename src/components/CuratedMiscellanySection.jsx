@@ -8,7 +8,8 @@ export default function CuratedMiscellanySection({
 }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [openToggles, setOpenToggles] = useState({
-    '8b61b43e-011a-470e-933f-bdc43dd06181': true // open by default for visibility
+    '8b61b43e-011a-470e-933f-bdc43dd06181': true, // Darknet Diaries open by default
+    'casefile-true-crime': true // Casefile open by default
   });
 
   const toggleItem = (id) => {
