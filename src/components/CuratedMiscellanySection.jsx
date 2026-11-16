@@ -7,11 +7,7 @@ export default function CuratedMiscellanySection({
   searchQuery
 }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [openToggles, setOpenToggles] = useState({
-    '8b61b43e-011a-470e-933f-bdc43dd06181': true, // Darknet Diaries open by default
-    'casefile-true-crime': true, // Casefile open by default
-    '99-percent-invisible': true // 99% Invisible open by default
-  });
+  const [openToggles, setOpenToggles] = useState({});
 
   const toggleItem = (id) => {
     setOpenToggles(prev => ({
@@ -128,6 +124,11 @@ export default function CuratedMiscellanySection({
                           className="text-left font-display text-[17px] sm:text-lg text-[#111111] font-normal tracking-tight hover:opacity-80 inline-flex items-center gap-1.5"
                         >
                           <span>{gem.title}</span>
+                          {isOpen ? (
+                            <ChevronDown className="w-4 h-4 text-[#111111] transition-transform" />
+                          ) : (
+                            <ChevronRight className="w-4 h-4 text-[#777777] transition-transform" />
+                          )}
                         </button>
                       ) : gem.url ? (
                         <a 
@@ -157,10 +158,10 @@ export default function CuratedMiscellanySection({
                     {hasEpisodes && (
                       <button
                         onClick={() => toggleItem(gem.id)}
-                        className="inline-flex items-center gap-1 text-[11px] sm:text-[10px] font-sans font-medium text-[#444444] bg-[#f0f0f0] hover:bg-[#e4e4e4] px-1.5 py-0.5 rounded transition-colors"
+                        className="inline-flex items-center gap-1.5 text-xs sm:text-[11px] font-sans font-medium text-[#222222] bg-[#f0f0f0] hover:bg-[#e4e4e4] border border-[#e0e0e0] px-2 py-0.5 rounded transition-all shadow-xs"
                         title={isOpen ? "Collapse list" : "Expand list"}
                       >
-                        {isOpen ? <ChevronDown className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />}
+                        {isOpen ? <ChevronDown className="w-3.5 h-3.5 text-[#111111]" /> : <ChevronRight className="w-3.5 h-3.5 text-[#555555]" />}
                         <span>{gem.episodes.length} episodes</span>
                       </button>
                     )}
