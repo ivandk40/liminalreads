@@ -14,7 +14,10 @@ export default function Header({
         <h1 className="font-display text-3xl sm:text-4xl font-normal text-[#111111] tracking-tight">
           Liminal Reads
         </h1>
-        <p className="mt-2 font-serif italic text-xs sm:text-[13px] text-[#666666] max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-1 font-serif text-xs sm:text-[13px] text-[#333333] tracking-wide">
+          Curated curiosities from the far reaches of the internet
+        </p>
+        <p className="mt-1.5 font-serif italic text-[11px] sm:text-xs text-[#777777] max-w-2xl mx-auto leading-relaxed">
           Investigative journalism, aviation post-mortems, darknet dispatches, transfinite mathematics, bizarre true crime, eerie manga, and Reddit folklore.
         </p>
       </div>

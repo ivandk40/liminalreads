@@ -97,7 +97,7 @@ export default function StoryReaderModal({ story, onClose }) {
 
         {/* Modal Footer */}
         <div className="px-6 py-3 border-t border-[#e5e5e5] bg-[#fafafa] flex items-center justify-between font-sans text-xs text-[#777777]">
-          <span>Compendious Amusements</span>
+          <span>Curated Curiosities</span>
           <button
             onClick={onClose}
             className="px-4 py-1.5 bg-[#111111] hover:bg-black text-white text-xs uppercase tracking-wider rounded font-medium transition-colors"

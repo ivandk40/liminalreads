@@ -97,7 +97,7 @@ export default function CuratedMiscellanySection({
       {/* Dense List of Curated Gems */}
       {filteredGems.length === 0 ? (
         <div className="text-center py-12 px-4 border border-dashed border-[#dddddd] rounded">
-          <p className="font-serif italic text-sm text-[#666666]">No amusements found in this category.</p>
+          <p className="font-serif italic text-sm text-[#666666]">No curiosities found in this category.</p>
         </div>
       ) : (
         <div className="divide-y divide-[#eeeeee]">
