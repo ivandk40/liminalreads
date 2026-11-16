@@ -204,6 +204,30 @@
     "paragraphs": []
   },
   {
+    "id": "last-words-on-the-bridge-langewiesche",
+    "title": "The Last Words on the Bridge",
+    "author": "William Langewiesche",
+    "description": "In 2015, the cargo ship El Faro steamed directly into Category 4 Hurricane Joaquin. The voice data recorder recovered from three miles beneath the sea reveals the final thirty-three hours on the bridge.",
+    "url": "https://archive.vanityfair.com/article/2018/4/the-last-words-on-the-bridge",
+    "category": "Articles",
+    "type": "Article",
+    "isStaffPick": true,
+    "readingTime": "Longform",
+    "paragraphs": []
+  },
+  {
+    "id": "a-sea-story-langewiesche",
+    "title": "A Sea Story",
+    "author": "William Langewiesche",
+    "description": "In September 1994, the ferry Estonia sank in the frigid Baltic Sea in under an hour, killing 852 people. A harrowing minute-by-minute account of panic, mechanics, and survival.",
+    "url": "https://www.theatlantic.com/magazine/archive/2004/05/a-sea-story/302940/",
+    "category": "Articles",
+    "type": "Article",
+    "isStaffPick": true,
+    "readingTime": "Longform",
+    "paragraphs": []
+  },
+  {
     "id": "dc570644-07c0-4cf3-a465-865312b039a5",
     "title": "Utopian for Beginners",
     "author": "Joshua Foer",
@@ -381,6 +405,18 @@
     "type": "Article",
     "isStaffPick": false,
     "readingTime": "Quick read",
+    "paragraphs": []
+  },
+  {
+    "id": "mh370-langewiesche",
+    "title": "What Really Happened to Malaysia's Missing Airplane",
+    "author": "William Langewiesche",
+    "description": "The definitive investigation into the mystery of MH370—how a Boeing 777 carrying 239 people vanished into thin air, and the troubled captain who took it off the grid.",
+    "url": "https://www.theatlantic.com/magazine/archive/2019/07/mh370-malaysia-airlines/590653/",
+    "category": "Aviation Disasters",
+    "type": "Article",
+    "isStaffPick": true,
+    "readingTime": "Longform",
     "paragraphs": []
   },
   {
