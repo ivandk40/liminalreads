@@ -85,7 +85,7 @@ export default function StoryReaderModal({ story, onClose }) {
           <div className="font-serif text-lg leading-relaxed text-[#222222] space-y-5">
             {story.paragraphs && story.paragraphs.length > 0 ? (
               story.paragraphs.map((p, idx) => (
-                <p key={idx} className="whitespace-pre-line first-letter:text-3xl first-letter:font-display first-letter:float-left first-letter:mr-2">
+                <p key={idx} className="whitespace-pre-line">
                   {p}
                 </p>
               ))
